@@ -1,2 +1,2 @@
-# Mars-gateway-example
-网关的 示例
+# 网关的 示例
+仅供参考
