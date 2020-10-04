@@ -14,6 +14,7 @@ public class DemoFilterTwo implements GateFilter {
         Map map = new HashMap();
         map.put("code",500);
         map.put("msg","不让你过");
+
         return map;
     }
 }
