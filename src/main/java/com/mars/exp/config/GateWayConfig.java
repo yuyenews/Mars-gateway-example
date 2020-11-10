@@ -15,8 +15,7 @@ public class GateWayConfig extends MarsGateWayConfig {
     public CloudConfig getGateWayConfig() {
         CloudConfig cloudConfig = new CloudConfig();
         cloudConfig.setName("gateWay");
-        cloudConfig.setRegister("10.211.55.21:2181");
-        cloudConfig.setSessionTimeout(10000000L);
+        cloudConfig.setContagions("http://127.0.0.1:8088");
         cloudConfig.setTimeOut(1000L);
         return cloudConfig;
     }

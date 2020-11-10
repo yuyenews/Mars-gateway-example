@@ -4,6 +4,7 @@ import com.mars.gateway.api.filter.GateFilter;
 import com.mars.server.server.request.HttpMarsRequest;
 import com.mars.server.server.request.HttpMarsResponse;
 
+import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,6 +16,10 @@ public class DemoFilterTwo implements GateFilter {
         map.put("code",500);
         map.put("msg","不让你过");
 
-        return map;
+        return SUCCESS;
+    }
+
+    public Object doResult(HttpMarsRequest httpMarsRequest, HttpMarsResponse httpMarsResponse, Object o, InputStream inputStream) {
+        return SUCCESS;
     }
 }
