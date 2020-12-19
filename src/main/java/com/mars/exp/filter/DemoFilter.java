@@ -1,9 +1,9 @@
 package com.mars.exp.filter;
 
 import com.mars.gateway.api.filter.GateFilter;
+import com.mars.iserver.server.impl.MarsHttpExchange;
 import com.mars.server.server.request.HttpMarsRequest;
 import com.mars.server.server.request.HttpMarsResponse;
-import com.sun.net.httpserver.HttpExchange;
 
 import java.io.InputStream;
 import java.util.ArrayList;
@@ -16,7 +16,7 @@ public class DemoFilter implements GateFilter {
 
         List<String> list = new ArrayList<String>();
         list.add("this is token");
-        request.getNativeRequest(HttpExchange.class).getRequestHeaders().put("token",list);
+        request.getNativeRequest(MarsHttpExchange.class).getRequestHeaders().put("token",list);
 
         return SUCCESS;
     }

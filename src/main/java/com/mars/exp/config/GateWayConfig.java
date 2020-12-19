@@ -1,6 +1,8 @@
 package com.mars.exp.config;
 
+import com.mars.cloud.balanced.BalancedCalc;
 import com.mars.cloud.config.model.CloudConfig;
+import com.mars.cloud.request.balanced.impl.BalancedCalcPolling;
 import com.mars.exp.filter.DemoFilter;
 import com.mars.exp.filter.DemoFilterTwo;
 import com.mars.gateway.api.filter.GateFilter;
@@ -26,5 +28,20 @@ public class GateWayConfig extends MarsGateWayConfig {
         list.add(new DemoFilter());
         list.add(new DemoFilterTwo());
         return list;
+    }
+
+    @Override
+    public BalancedCalc getBalancedCalc() {
+        return new BalancedCalcPolling();
+    }
+
+    /**
+     * 每次从请求的数据中读取多少字节
+     * 默认1M
+     * @return
+     */
+    @Override
+    public int readSize() {
+        return super.readSize();
     }
 }
