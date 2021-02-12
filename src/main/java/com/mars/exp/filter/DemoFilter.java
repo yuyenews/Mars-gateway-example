@@ -14,9 +14,7 @@ public class DemoFilter implements GateFilter {
     public Object doFilter(HttpMarsRequest request, HttpMarsResponse response) {
         System.out.println("过滤器1");
 
-        List<String> list = new ArrayList<String>();
-        list.add("this is token");
-        request.getNativeRequest(MarsHttpExchange.class).getRequestHeaders().put("token",list);
+        request.getNativeRequest(MarsHttpExchange.class).getRequestHeaders().put("token","this is token");
 
         return SUCCESS;
     }

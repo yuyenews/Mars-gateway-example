@@ -35,13 +35,4 @@ public class GateWayConfig extends MarsGateWayConfig {
         return new BalancedCalcPolling();
     }
 
-    /**
-     * 每次从请求的数据中读取多少字节
-     * 默认1M
-     * @return
-     */
-    @Override
-    public int readSize() {
-        return super.readSize();
-    }
 }
