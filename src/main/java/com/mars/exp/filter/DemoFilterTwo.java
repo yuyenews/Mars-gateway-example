@@ -1,6 +1,6 @@
 package com.mars.exp.filter;
 
-import com.mars.gateway.api.filter.GateFilter;
+import com.mars.gateway.common.filter.GateFilter;
 import com.mars.server.server.request.HttpMarsRequest;
 import com.mars.server.server.request.HttpMarsResponse;
 

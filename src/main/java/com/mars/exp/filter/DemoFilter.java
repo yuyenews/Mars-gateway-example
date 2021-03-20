@@ -1,13 +1,11 @@
 package com.mars.exp.filter;
 
-import com.mars.gateway.api.filter.GateFilter;
+import com.mars.gateway.common.filter.GateFilter;
 import com.mars.iserver.server.impl.MarsHttpExchange;
 import com.mars.server.server.request.HttpMarsRequest;
 import com.mars.server.server.request.HttpMarsResponse;
 
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
 
 public class DemoFilter implements GateFilter {
 

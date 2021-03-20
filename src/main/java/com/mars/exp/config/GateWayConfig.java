@@ -5,7 +5,7 @@ import com.mars.cloud.config.model.CloudConfig;
 import com.mars.cloud.request.balanced.impl.BalancedCalcPolling;
 import com.mars.exp.filter.DemoFilter;
 import com.mars.exp.filter.DemoFilterTwo;
-import com.mars.gateway.api.filter.GateFilter;
+import com.mars.gateway.common.filter.GateFilter;
 import com.mars.gateway.config.MarsGateWayConfig;
 
 import java.util.ArrayList;
