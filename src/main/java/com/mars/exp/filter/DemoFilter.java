@@ -1,7 +1,7 @@
 package com.mars.exp.filter;
 
 import com.mars.gateway.common.filter.GateFilter;
-import com.mars.iserver.server.impl.MarsHttpExchange;
+import com.mars.aio.server.impl.MarsHttpExchange;
 import com.mars.server.server.request.HttpMarsRequest;
 import com.mars.server.server.request.HttpMarsResponse;
 
